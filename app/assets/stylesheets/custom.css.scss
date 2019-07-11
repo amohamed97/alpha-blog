@@ -37,7 +37,6 @@ body {
   text-decoration: none;
 }
 
-
 #site-footer{
   //margin-top: 45px;
   padding-top: 5px;
@@ -74,7 +73,46 @@ footer a:hover{
   color: #777;
 }
 
+.messages{
+  list-style: none;
+}
+
+.center{
+  text-align: center;
+}
+
 //End Global CSS
+
+// Start Home Page Styling
+.jumbotron{
+  background-image: asset_url('jumbotron-hack.jpg');
+  background-size: cover;
+  height: 700px;
+}
+
+.jumbotron h1{
+  color: #c1c2c6;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: -2px;
+  margin-top: 0;
+}
+
+.btn-xlarge{
+  font-size: 1.7em;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.btn-xlarge:hover{
+  border-color: black;
+  background-color: white;
+  color: black
+}
+
+// END Home Page Styling
+
 
 
 // Start Article Creation Styling
@@ -103,42 +141,26 @@ footer a:hover{
 // End Show Styling
 
 
-.messages{
-  list-style: none;
+// Start Listing Styling
+
+.article-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 
 
-.center{
-  text-align: center;
-}
+// End Listing Styling
 
-.jumbotron{
-  background-image: asset_url('jumbotron-hack.jpg');
-  background-size: cover;
-  height: 700px;
-}
 
-.jumbotron h1{
-  color: ghostwhite;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: -2px;
-  margin-top: 0;
-}
 
-.btn-xlarge{
-  font-size: 1.7em;
-  background-color: transparent;
-  border-color: white;
-  color: white;
-}
 
-.btn-xlarge:hover{
-  border-color: black;
-  background-color: white;
-  color: black
-}
 
 
 

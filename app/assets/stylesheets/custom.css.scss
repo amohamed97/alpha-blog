@@ -2,6 +2,9 @@ $navbar-default-bg: black;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+//Starting Global CSS
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +23,6 @@ body {
   padding-bottom: 35px;
 }
 
-
-
 #logo {
   float: left;
   font-size: 1.7em;
@@ -36,36 +37,6 @@ body {
   text-decoration: none;
 }
 
-.center{
-  text-align: center;
-}
-
-.jumbotron{
-  background-image: asset_url('jumbotron-hack.jpg');
-  background-size: cover;
-  height: 700px;
-}
-
-.jumbotron h1{
-  color: ghostwhite;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: -2px;
-  margin-top: 0;
-}
-
-.btn-xlarge{
-  font-size: 1.7em;
-  background-color: transparent;
-  border-color: white;
-  color: white;
-}
-
-.btn-xlarge:hover{
-  border-color: black;
-  background-color: white;
-  color: black
-}
 
 #site-footer{
   //margin-top: 45px;
@@ -102,4 +73,53 @@ footer ul li{
 footer a:hover{
   color: #777;
 }
+
+//End Global CSS
+
+
+// Start Article Creation Styling
+
+.myform{
+  margin-top: 25px;
+}
+
+
+// End Article Creation Styling
+
+.messages{
+  list-style: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset_url('jumbotron-hack.jpg');
+  background-size: cover;
+  height: 700px;
+}
+
+.jumbotron h1{
+  color: ghostwhite;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: -2px;
+  margin-top: 0;
+}
+
+.btn-xlarge{
+  font-size: 1.7em;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.btn-xlarge:hover{
+  border-color: black;
+  background-color: white;
+  color: black
+}
+
+
 

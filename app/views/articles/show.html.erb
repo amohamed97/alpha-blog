@@ -1,5 +1,10 @@
-<p> Title : <%= @article.title %></p>
-<p> Description : <%= @article.description %></p>
+<div class="row">
+  <div class="col-xs-12 col-xs-offset-1">
+    <p> Title : <%= @article.title %></p>
+    <p> Description : <%= @article.description %></p>
 
-<%= link_to "Edit", edit_article_path(@article) %> |
-<%= link_to "All Articles", articles_path %>
+    <%= link_to "Edit", edit_article_path(@article) %> |
+    <%= link_to "All Articles", articles_path %>
+  </div>
+</div>
+

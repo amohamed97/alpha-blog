@@ -2,6 +2,25 @@ $navbar-default-bg: black;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+#wrapper{
+  min-height: 100%;
+
+  overflow: auto;
+  padding-bottom: 35px;
+}
+
+
 
 #logo {
   float: left;
@@ -24,7 +43,7 @@ $navbar-default-bg: black;
 .jumbotron{
   background-image: asset_url('jumbotron-hack.jpg');
   background-size: cover;
-  height: 550px;
+  height: 700px;
 }
 
 .jumbotron h1{
@@ -38,10 +57,49 @@ $navbar-default-bg: black;
 .btn-xlarge{
   font-size: 1.7em;
   background-color: transparent;
-  border-color: red;
+  border-color: white;
+  color: white;
 }
 
-//.btn-xlarge:hover{
-//  border-color: red;
-//  background-color: #2E2F30;
-//}
+.btn-xlarge:hover{
+  border-color: black;
+  background-color: white;
+  color: black
+}
+
+#site-footer{
+  //margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  background: black;
+
+  //position:fixed;
+  //width: 100%;
+  //bottom:0;
+  position: relative;
+  margin-top: -35px;
+  /* negative value of footer height */
+  height: 35px;
+  clear: both;
+}
+
+footer small{
+  float: left;
+}
+
+footer ul{
+  float: right;
+  list-style: none;
+}
+
+footer ul li{
+  float: left;
+  margin-left: 10px;
+  padding: 0 5px;
+}
+
+footer a:hover{
+  color: #777;
+}
+

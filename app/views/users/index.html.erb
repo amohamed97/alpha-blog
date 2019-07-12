@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="well well-lg">
+        <h4><%= user.username %></h4>
+        <h4><%= user.email %></h4>
+      </div>
+    </div>
+  </div>
+<% end %>

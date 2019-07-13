@@ -1,8 +1,8 @@
 class ArticlesController < ApplicationController
 
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-  before_action :require_user, except: [:index, :show]
-  before_action :require_same_user, except: [:index, :show, :new, :create]
+  before_action :require_user, except: [:index, :show, :search]
+  before_action :require_same_user, except: [:index, :show, :new, :create, :search]
 
   def index
     @articles = Article.paginate(page: params[:page], per_page: 4)
@@ -44,6 +44,12 @@ class ArticlesController < ApplicationController
     @article.destroy
     flash[:danger] = "Article was successfully deleted"
     redirect_to articles_path
+  end
+
+  def search
+    query = params[:query]
+    @articles = Article.all.select {|article| article.description.include?(query) ||
+                                    article.title.include?(query)}
   end
 
 

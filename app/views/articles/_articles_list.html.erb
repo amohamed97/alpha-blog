@@ -10,7 +10,7 @@
           <!--            <h4 class="center" id="description"> <strong> Description: </strong> </h4>-->
           <%= truncate(article.description, length: 100) %>
           <div class="article-meta-data">
-            <small>Created by: <%= article.user.username %>,
+            <small>Created by: <%= article.user.username if article.user %>,
               Created At : <%= time_ago_in_words(article.created_at) %> ago ,
               Updated At : <%= time_ago_in_words(article.updated_at) %> ago</small>
           </div>

@@ -1,0 +1,15 @@
+<h1 class="center">Listing categories</h1>
+
+<% @categories.each do |category| %>
+  <ul class="listing">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="well well-lg center">
+          <li>
+            <h4><%= link_to category.name,category_path(category) %></h4>
+          </li>
+        </div>
+      </div>
+    </div>
+  </ul>
+<% end %>

@@ -14,6 +14,7 @@
               Created At : <%= time_ago_in_words(article.created_at) %> ago ,
               Updated At : <%= time_ago_in_words(article.updated_at) %> ago</small>
           </div>
+          <%= render 'categories/category_list', obj: article %>
         </div>
         <% if logged_in? && (current_user == article.user || current_user.admin?) %>
           <div class="article-actions">

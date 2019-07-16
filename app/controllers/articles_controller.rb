@@ -50,6 +50,14 @@ class ArticlesController < ApplicationController
     query = params[:query]
     @articles = Article.all.select {|article| article.description.include?(query) ||
                                     article.title.include?(query)}
+    @articles.each do |article|
+      if article.description[query]
+        article.description[query] = "<span class='search-query'> #{query}</span>"
+      end
+      if article.title[query]
+        article.title[query] = "<span class='search-query'> #{query}</span>"
+      end
+    end
   end
 
 

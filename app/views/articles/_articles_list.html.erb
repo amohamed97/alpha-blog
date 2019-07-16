@@ -4,14 +4,14 @@
     <div class="col-xs-8 col-xs-offset-2">
       <div class="well well-lg">
         <div class="article-title center">
-          <%= link_to article.title, article_path(article) %>
+          <%= link_to article.title.html_safe, article_path(article) %>
         </div>
         <div class="article-body">
           <!--            <h4 class="center" id="description"> <strong> Description: </strong> </h4>-->
-          <%= truncate(article.description, length: 100) %>
+          <%= truncate(article.description.html_safe, length: 100) %>
           <div class="article-meta-data">
-            <small>Created by: <%= article.user.username if article.user %>,
-              Created At : <%= time_ago_in_words(article.created_at) %> ago ,
+            <small>Created by: <%= article.user.username if article.user %> |
+              Created At : <%= time_ago_in_words(article.created_at) %> ago |
               Updated At : <%= time_ago_in_words(article.updated_at) %> ago</small>
           </div>
           <%= render 'categories/category_list', obj: article %>

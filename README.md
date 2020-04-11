@@ -16,6 +16,7 @@ This is a blog website made while learning Ruby on Rails using [this course](htt
   - Updating account (Authorized)
   - Deleting account (Admin)
 - Categories
+- Search
 
 
 
